@@ -29,7 +29,14 @@ html{
 }
 
 body{
+    background-color: #f3f3f3;
+    color: #434343;
     font-size: 1.6rem;
+}
+
+.math{
+    color: #434343;
+    font-size: 1.2em;
 }
 
 /* selection text **************************************************/
