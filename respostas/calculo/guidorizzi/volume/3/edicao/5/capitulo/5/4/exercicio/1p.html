@@ -18,13 +18,6 @@
   <!-- math scripts -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-  <style>
-      .math {
-          font-size: 1.2rem; /* Tamanho da fonte da fórmula */
-      }
-  </style>
-
 </head>
 <body>
     <main class="flex-center-center">
@@ -39,10 +32,24 @@
                 Calcule \( \iiint_B 2z \ dxdydz \), onde \( B \) é o conjunto \( 4x^2 + 9x^2 + z^2 \leq 4\), \( \ z \geq 0 \).
             </p>
 
-            <!--<iframe width="368" height="207" src="https://www.youtube.com/embed/jbOGyr8WUeo?si=_9SIiwe_mmGW_9bh&amp;controls=1&rel=0&autoplay=0&color=white&fs=0&iv_load_policy=3&modestbranding=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
-
             <div class="development">
                 <h2>Passo a passo</h2>
+
+                <div class="video-tutorial">
+                    <div class="flex-center-center">
+                        <div class="video-response" id="math-tuto" data-id="jbOGyr8WUeo">
+                            <div class="player">
+                                <img width="560" height="315" src="../../../../../../../../../../../src/assets/thumbnail/01-Integral-tripla-com-coordenadas-esfericas.jpg" alt="YouTube video cover">
+        
+                                <i class="fi fi-rr-play flex-center-center"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="video-label">
+                        Resolução da questão em vídeo.
+                    </p>
+                </div>
+
                 <p>
                     Antes de qualquer coisa, faça o inverso dos coeficientes do conjunto \( B \). Fazendo isso, você vai ter que: \( a^2 = \frac{1}{4} \), \( b^2 = \frac{1}{9} \) e \( c^2 = 1 \).
                 </p>
@@ -120,6 +127,7 @@
 
     <!-- scripts -->
     <script src="../../../../../../../../../../../src/components/header.js"></script>
+    <script src="../../../../../../../../../../../src/components/video/autoplay.js"></script>
     <script src="../../../../../../../../../../../src/components/footer.js"></script>
 </body>
 </html>
