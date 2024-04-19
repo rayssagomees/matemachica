@@ -40,7 +40,6 @@ main{
 }
 
 footer{
-    font-size: 1.4rem;
     text-align: center;
     padding: 2rem;
 }
@@ -60,7 +59,6 @@ h3{
 }
 
 p{
-    font-size: 1.8rem;
     padding: .8rem 0;
 }
 
@@ -119,13 +117,6 @@ p{
     z-index: 1;
 }
 
-.video-response .fi .fi-rr-play{
-    width: 50px;
-    font-size: 4rem;
-    color: var(--main-color);
-    z-index: 99;
-}
-
 .answer{
     width: 100%;
     background-color: var(--light-main-color);
@@ -138,10 +129,18 @@ p{
 }
 
 @media only screen and (max-width: 670px) {
+    body{
+        font-size: 1.8rem;
+    }
+    
     .content {
-        width: 98%;
+        width: 100%;
         padding: 2.8rem 2.4rem;
         font-size: 1.2rem;
+    }
+
+    .book-ref, .video-label{
+        font-size: .8rem;
     }
 
     .video-response{
