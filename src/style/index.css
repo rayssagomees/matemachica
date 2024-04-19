@@ -140,7 +140,7 @@ p{
 @media only screen and (max-width: 1000px) {
     .content {
         width: 98%;
-        padding: 4rem 8rem;
+        padding: 2rem 4rem;
     }
 
     .video-response{
