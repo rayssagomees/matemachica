@@ -29,102 +29,91 @@
 <body>
     <main class="flex-center-center">
         <div class="content">
-            <div class="math">
-                \[
-                \begin{equation}
-                \begin{aligned}
-                    &\colorbox{#ffffff}{Capítulo 5.4, exercício 1P} \text{ GUIDORIZZI, Hamilton Luiz. Um curso de cálculo. Vol. 3. 5. ed.} \\
-                    &\text{Calcule} \ \iiint_B 2z \, dxdydz, \text{onde } B \text{ é o conjunto} \ 4x^2 + 9x^2 + z^2 \leq 4, \ z \geq 0.\\ \\
-                    
-                \end{aligned}
-                \end{equation}
-                
-                \]
+            <h2>Enunciado</h2>
+
+            <div class="book-ref">
+                GUIDORIZZI, Hamilton Luiz. Um curso de cálculo. Vol. 3. 5. ed. Rio de Janeiro: LTC, 2013. Capítulo 5.4. Exercício 1p.
             </div>
 
-            <iframe width="368" height="207" src="https://www.youtube.com/embed/jbOGyr8WUeo?si=_9SIiwe_mmGW_9bh&amp;controls=1&rel=0&autoplay=0&color=white&fs=0&iv_load_policy=3&modestbranding=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="question">
+                Calcule \( \iiint_B 2z \ dxdydz \), onde \( B \) é o conjunto \( 4x^2 + 9x^2 + z^2 \leq 4\), \( \ z \geq 0 \).
+            </p>
 
-            <div class="math">
-                \[
-                \begin{equation}
-                \begin{aligned}
-                    &\ \text{Antes qualquer coisa, faça o inverso dos coeficientes do conjunto } B. \\ \\
+            <!--<iframe width="368" height="207" src="https://www.youtube.com/embed/jbOGyr8WUeo?si=_9SIiwe_mmGW_9bh&amp;controls=1&rel=0&autoplay=0&color=white&fs=0&iv_load_policy=3&modestbranding=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
 
-                    &\ 4 \Rightarrow \frac{1}{4} \quad \quad 9 \Rightarrow \frac{1}{9} \quad \quad 1 \Rightarrow \frac{1}{1} = 1 \\ \\ 
-
-                    &\ \text{Fazendo isso você vai encontrar:} \\ \\
-                    
-                    &\ a^2 = \frac{1}{4} \quad \quad b^2 = \frac{1}{9} \quad \quad c^2 = 1 \\ \\
-
-                    &\ \text{Como queremos saber o valor de } a, b, c \text{, então:} \\ \\
-                    
-                    &\ \sqrt{a^2} = \sqrt{\frac{1}{4}} \Rightarrow a = \frac{1}{2}  \\ \\
-                    
-                    &\ \sqrt{b^2} = \sqrt{\frac{1}{9}} \Rightarrow b = \frac{1}{3} \\ \\
-                    
-                    &\ \sqrt{c^2} = \sqrt{1} \Rightarrow c = 1 \\ \\
-
-                    &\ \text{Além disso, precisamos descobrir o nosso raio, sendo assim, temos que} \\ \\
-
-                    &\ r^2 = 4 \Rightarrow \sqrt{r^2} = \sqrt{4} \Rightarrow r = 2 \\ \\
-
-                    &\ \text{Agora, basta substituir os valores na inequação:} \\ \\
-
-                    &\ \frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} \leq r^2  \quad \Rightarrow \quad \left( \frac{x}{a} \right)^2 + \left( \frac{y}{b} \right)^2 + \left( \frac{z}{c} \right)^2 \leq r^2\\ \\
-
-                    &\ \left( \frac{x}{\frac{1}{2}} \right)^2 + \left( \frac{y}{\frac{1}{3}} \right)^2 + \left( \frac{z}{1} \right)^2 \leq 2^2 \\ \\
-
-                    &\ \text{Fazendo a transformação para coordenadas esféricas, temos que} \\ \\ 
-
-                    &\ \left\{
+            <div class="development">
+                <h2>Passo a passo</h2>
+                <p>
+                    Antes de qualquer coisa, faça o inverso dos coeficientes do conjunto \( B \). Fazendo isso, você vai ter que: \( a^2 = \frac{1}{4} \), \( b^2 = \frac{1}{9} \) e \( c^2 = 1 \).
+                </p>
+                <p>
+                    Como queremos saber o valor de \( a \), \( b \) e \( c \), basta tirar a raiz de ambos os lados, assim: \( a = \frac{1}{2} \), \( b = \frac{1}{3} \) e \( c = 1 \). Da mesma forma, fazemos para o raio: \( r^2 = 4 \Rightarrow r = 2 \).
+                </p>
+                <p>
+                    Agora, é só substituir:
+                </p>
+                <p>
+                    \( \frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} \leq r^2 \) \( \Rightarrow \) \( \left( \frac{x}{a} \right)^2 + \left( \frac{y}{b} \right)^2 + \left( \frac{z}{c} \right)^2 \leq r^2 \) \( \Rightarrow \) \( \left( \frac{x}{\frac{1}{2}} \right)^2 + \left( \frac{y}{\frac{1}{3}} \right)^2 + \left( \frac{z}{1} \right)^2 \leq 2^2 \)
+                </p>
+                <p>
+                    Depois disso, fazemos a transformação para coordenadas esféricas.
+                </p>
+                <p>
+                    \( \left\{
                         \begin{aligned}
                             &\ x = a \ \rho \ \cos(\theta) \ \sin(\phi) \\
                             &\ y = b \ \rho \ \sin(\theta) \ \sin(\phi)  \\
                             &\ z = c \ \rho \ \cos(\phi) 
                         \end{aligned}
-                        \right. \quad \Rightarrow \quad 
-                    \left\{
+                        \right. \) \( \quad \Rightarrow \quad \)
+                    \( \left\{
                         \begin{aligned}
                             &\ x = \frac{1}{2} \ \rho \ \cos(\theta) \ \sin(\phi)\\
                             &\ y = \frac{1}{3} \ \rho \ \sin(\theta) \ \sin(\phi) \\
                             &\ z = \rho \ \cos(\phi) 
                         \end{aligned}
-                        \right.  \\ \\
-
-                    &\ \text{Com o jacobiano sendo:} \\ \\ 
-
-                    &\ \frac{d(x, y, z)}{d(\rho, \theta, \phi)} = abc\rho^2\sin(\phi) \ d\rho d\theta d\phi \quad \Rightarrow \quad \frac{d(x, y, z)}{d(\rho, \theta, \phi)} = \frac{1}{6} \rho^2\sin(\phi) \ d\rho d\theta d\phi \\ \\
-
-                    &\ \text{Substituindo na função, ficamos com:} \\ \\ 
-                    
-                    &\ f(x, y, z) = 2z \ dxdydz \\
-                    
-                    &\ f(\rho, \theta, \phi)= 2 \rho \cos(\phi) \left( \frac{1}{6} \rho^2\sin(\phi) \right) \ d\rho d\theta d\phi = \frac{1}{3} \ \rho^3 \sin(\phi)\cos(\phi) \ d\rho d\theta d\phi  \\ \\
-
-                    &\ \text{Os novos intervalos de integração são:} \\ \\ 
-                    
-                    &\ \left\{
+                        \right. \)
+                </p>
+                <p>
+                    Com o jacobiano sendo: \( \frac{d(x, y, z)}{d(\rho, \theta, \phi)} = abc\rho^2\sin(\phi) \ d\rho d\theta d\phi \) \( \Rightarrow \) \( \frac{d(x, y, z)}{d(\rho, \theta, \phi)} = \frac{1}{6} \rho^2\sin(\phi) \ d\rho d\theta d\phi \).
+                </p>
+                <p>
+                    Agora, a gente já consegue descobrir a nossa função.
+                </p>
+                <p>
+                    \( f(x, y, z) = 2z \ dxdydz \)
+                </p>
+                <p>
+                    \( f(\rho, \theta, \phi)= 2 \rho \cos(\phi) \left( \frac{1}{6} \rho^2\sin(\phi) \right) \ d\rho d\theta d\phi \) \(=\) \( \frac{1}{3} \ \rho^3 \sin(\phi)\cos(\phi) \ d\rho d\theta d\phi \)
+                </p>
+                <p>
+                    E, descobrir nosso intervalo de integração também:
+                </p>
+                <p>
+                    \( \left\{
                         \begin{aligned}
                             &\ 0 \leq \phi \leq \frac{\pi}{2} \\
                             &\ 0 \leq \theta \leq 2\pi \\
                             &\ 0 \leq \rho \leq 2
                         \end{aligned}
-                        \right.  \\ \\
+                        \right. \)
+                </p>
+                <p>
+                    Reescrevendo a integral, agora:
+                </p>
+                <p>
+                    \( \int_{0}^{\frac{\pi}{2}}\int_{0}^{2\pi}\int_{0}^{2} \frac{1}{3} \ \rho^3 \sin(\phi)\cos(\phi) \ d\rho d\theta d\phi \) \(=\) \(  \int_{0}^{\frac{\pi}{2}} \sin(\phi)\cos(\phi) \ d\phi \int_{0}^{2\pi} \ d\theta \int_{0}^{2} \frac{1}{3} \ \rho^3 d\rho \)
+                </p>
+                <p>
+                    \(\left(\frac{\sin^2(\phi)}{2}\right) \Bigg|_{1}^{2} \ \left(\theta \ \right) \Bigg|_{1}^{2} \ \left(\frac{1}{3} \ \frac{\rho^4}{4} \right) \Bigg|_{1}^{2} \) \(= \) \(\frac{1}{2} \left(\sin^2 \left( \frac{\pi}{2} \right) - (\sin^2 (0)\right) (2\pi - 0) \frac{1}{12} (2^4-0^4) \) \(= \) \( \frac{4\pi}{3} \)
+                </p>
+            </div>
 
-                    &\ \text{Reescrevendo a integral, temos:} \\ \\ 
-                    
-                    &\ \int_{0}^{\frac{\pi}{2}}\int_{0}^{2\pi}\int_{0}^{2} \frac{1}{3} \ \rho^3 \sin(\phi)\cos(\phi) \ d\rho d\theta d\phi \\ \\
-                    
-                    &\ \int_{0}^{\frac{\pi}{2}} \sin(\phi)\cos(\phi) \ d\phi \int_{0}^{2\pi} \ d\theta \int_{0}^{2} \frac{1}{3} \ \rho^3 d\rho  \\ \\
-                    
-                    &\ \left(\frac{\sin^2(\phi)}{2}\right) \Bigg|_{1}^{2} \ \left(\theta \ \right) \Bigg|_{1}^{2} \ \left(\frac{1}{3} \ \frac{\rho^4}{4} \right) \Bigg|_{1}^{2} = \frac{1}{2} \left(\sin^2 \left( \frac{\pi}{2} \right) - (\sin^2 (0)\right) (2\pi - 0) \frac{1}{12} (2^4-0^4) = \frac{4\pi}{3} \\ \\
-                    
-                    &\ \therefore \ \iiint_B 2z \, dxdydz = \frac{4\pi}{3}, \text{onde B é o conjunto} \ 4x^2 + 9x^2 + z^2 \leq 4, \ z \geq 0. \\
-                    
-                \end{aligned}
-                \end{equation}
-                
-                \]
+            <div class="answer">
+                <h3>Resposta</h3>
+                <p>
+                    \(\therefore \ \iiint_B 2z \, dxdydz = \frac{4\pi}{3}\), onde \( B \) é o conjunto \( 4x^2 + 9x^2 + z^2 \leq 4\), \( \ z \geq 0 \).
+                </p>
             </div>
         </div>
     </main>
