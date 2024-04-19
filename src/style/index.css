@@ -137,9 +137,9 @@ p{
     padding-bottom: 1.6rem;
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 900px) {
     .content {
-        width: 97%;
+        width: 98%;
         padding: 4rem 8rem;
     }
 
@@ -147,7 +147,7 @@ p{
         width: 100%;
     }
 }
-
+/*
 @media only screen and (min-width: 670px) and (max-width: 900px) {
     .content {
         width: 80%;
@@ -158,7 +158,7 @@ p{
         width: 100%;
     }
 }
-
+*/
 .flex-center-center{
     display: flex;
     justify-content: center;
