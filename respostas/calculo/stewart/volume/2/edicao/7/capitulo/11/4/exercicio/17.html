@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- page style -->
+  <meta name="theme-color" content="#eeeeee">
+  <link rel="shortcut icon" href="../../../../../../../../../../../public/hamster-coquette.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../../../../../../../../../../src/style/index.css">
+
+  <title>Matemachica</title>
+
+  <!-- scripts -->
+  <script src="../../../../../../../../../../../src/components/index.js"></script>
+
+  <!-- math scripts -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <main class="flex-center-center">
+        <div class="content">
+            <h2>Enunciado</h2>
+
+            <div class="book-ref">
+                STEWART, James. Cálculo. Vol. 2. 7. ed. São Paulo: Cengage Learning, 2013. Capítulo 11.4. Exercício 17.
+            </div>
+
+            <p class="question">
+                Determine se a série \( \sum_{n=1}^{\infty}  \frac{1}{\sqrt{n^2+1}} \) converge ou diverge.
+            </p>
+
+            <div class="development">
+                <h2>Passo a passo</h2>
+
+                <div class="video-tutorial">
+                    <div class="flex-center-center">
+                        <div class="video-response" id="math-tuto" data-id="P2uzjag2iEs">
+                            <div class="player">
+                                <img width="560" height="315" src="../../../../../../../../../../../src/assets/thumbnail/02.jpg" alt="YouTube video cover">
+        
+                                <i class="fi fi-rr-play flex-center-center"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="video-label">
+                        Clique para assistir a resolução em vídeo.
+                    </p>
+                </div>
+
+                <p>
+                    Vamos usar o teste da comparação no limite para ver se a série diverge ou não. O teste nos diz que \( \sum a_n \) e \( \sum b_n \) sejam séries com termos positivos. Se \( \lim_{n \to \infty} \frac{a_n}{b_n} = c, c > 0 \), então ambas as séries convergem ou divergem.
+                </p>
+                <p>
+                    Antes de continuar precisamos descobrir o nosso \( \sum b_n \). Vamos fazer isso utilizando inequação para encontrar uma série que seja próxima da que estamos analisando, então:
+                </p>
+                <p>
+                    \( n^2+1 > n^2 \) \( \Rightarrow \) \(\) \( \sqrt{n^2+1} > \sqrt{n^2} \) \( \Rightarrow \) \( \frac{1}{ \sqrt{n^2+1}} < \frac{1}{\sqrt{n^2}} \) \( \Rightarrow \) \( \frac{1}{ \sqrt{n^2+1}} < \frac{1}{n} \)
+                </p>
+                <p>
+                    Com isso, temos que a nossa série conhecida vai ser \( \sum b_n \) e a série que a gente quer descobrir vai ser \( \sum a_n \), então:
+                </p>
+                <p>
+                    \( \sum a_n  \) \( = \) \(  \sum_{n=1}^{\infty} \frac{1}{ \sqrt{n^2+1}} \) \( \quad \quad \) \( \sum b_n  \) \( = \) \(  \sum_{n=1}^{\infty} \frac{1}{n} \)
+                </p>
+                <p>Como a série harmônica \( \sum_{n=1}^{\infty} \frac{1}{n} \) é divergente. Então, se o nosso teste for verdadeiro, a nossa série também será divergente. Vamos aplicar o limite do teste, então:</p>
+                <p>
+                    \( \lim_{n \to \infty} \left( \frac{\frac{1}{ \sqrt{n^2+1}}}{\frac{1}{n}} \right)  \) \( = \) \(  \lim_{n \to \infty} \frac{1}{ \sqrt{n^2+1}} \frac{n}{1} \) \( = \) \( \lim_{n \to \infty} \frac{n}{ \sqrt{n^2(1 + \frac{1}{n^2})}}  \) \( = \) \(  \lim_{n \to \infty} \frac{n}{n}  \) \( = \) \(  \lim_{n \to \infty} 1  \) \( = \) \(  1 \)
+                </p>
+                <p>
+                    Como \( 1 > 0 \) e \( \sum b_n = \sum_{n=1}^{\infty} \frac{1}{n} \) é uma série harmônica e divergente, então, pelo teste da comparação no limite, a série \( \sum_{n=1}^{\infty} \frac{1}{\sqrt{n^2+1}} \) também vai divergir.
+                </p>
+            </div>
+
+            <h2>Resposta</h2>
+
+            <div class="padding-extra">
+                <div class="answer">
+                    <p>
+                        \(\therefore \ \) A série \( \sum_{n=1}^{\infty} \frac{1}{\sqrt{n^2+1}} \) diverge.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- scripts -->
+    <script src="../../../../../../../../../../../src/components/header.js"></script>
+    <script src="../../../../../../../../../../../src/components/video/autoplay.js"></script>
+    <script src="../../../../../../../../../../../src/components/footer.js"></script>
+</body>
+</html>
