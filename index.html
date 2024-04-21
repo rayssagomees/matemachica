@@ -9,8 +9,85 @@
 
   <!-- scripts -->
   <script src="/src/components/index.js"></script>
+
+  <style>
+    .main {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: white;
+      padding: 4rem;
+      border-radius: .8rem;
+      margin: 4rem;
+    }
+    
+    .container {
+      width: 900px;
+      display: flex;
+      flex-wrap: wrap;
+      /*justify-content: center;*/
+    }
+
+    .book {
+      position: relative;
+      padding: 2.4rem .8rem;
+      width: calc(100% / 5);
+    }
+
+    .book img {
+      width: 100%; 
+      height: auto; 
+      object-fit: cover;
+      aspect-ratio: 3/4;
+      border-radius: .4rem;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+      filter: grayscale(100%); 
+    }
+
+    .book img:hover {
+      filter: none; 
+    }
+
+  .container button{
+    background-color: var(--main-color);
+    font-family: var(--font-text);
+    font-size: 1.6rem;
+    color: white;
+    padding: 1.2rem 6rem;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .container button:hover{
+    background-color: var(--text-color);
+  }
+
+@media only screen and (max-width: 900px) {
+    .main {
+        width: 90%;
+    }
+
+    .book {
+      width: calc(100% / 3);
+    }
+}
+  </style>
 </head>
 <body>
-    <!-- something -->
+  <div class="flex-center-center">
+    <div class="main" id="mainn">
+      <h2>Livros resolvidos</h2>
+  
+      <div class="container" id="bookContainer"></div>
+
+      <!--<button>Ver mais</button>-->
+
+    </div>
+  </div>
+  <!-- scripts -->
+  <script src="src/components/home.js"></script>
 </body>
 </html>
