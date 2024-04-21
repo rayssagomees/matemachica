@@ -1,13 +1,27 @@
+const bookCover = 'src/media/book-cover/';
+
 const books = [
   {
-    cover: "src/assets/book-cover/" + "stewart-calculo-v2-7ed-2013" + ".jpg",
+    cover: bookCover + "stewart-calculo-v2-7ed-2013.jpg",
+    author: "James Stewart",
     title: "Cálculo",
-    link: "/respostas/calculo/stewart/volume/2/edicao/7/" + 'problema' + '.html',
+    volume: "2",
+    edition: "7",
+    placePublication: "São Paulo",
+    editor: "Cengage Learning",
+    yearPublication: "2013",
+    link: '/',
   },
   {
-    cover: "src/assets/book-cover/" + "guidorizzi-calculo-v3-5ed-2013" + ".jpg",
+    cover: bookCover + "guidorizzi-calculo-v3-5ed-2013.jpg",
+    author: "Hamilton Luiz Guidorizzi",
     title: "Um curso de cálculo",
-    link: "/respostas/calculo/guidorizzi/volume/3/edicao/5/" + 'problema' + '.html',
+    volume: "3",
+    edition: "5",
+    placePublication: "São Paulo",
+    editor: "LTC",
+    yearPublication: "2013",
+    link: '/',
   },
   ];
   
