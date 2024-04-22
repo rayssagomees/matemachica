@@ -1,0 +1,83 @@
+.selectProblem, .content{
+    width: 50%;
+    background-color: #ffffff;
+    padding: 4rem 8rem;
+    border-radius: .4rem;
+}
+
+.selectProblem form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selectProblem form div{
+    width: calc(50% / 3);
+    background-color: #f1f1f1;
+    padding: calc(.8rem * 2) calc(1.6rem * 4);
+    border: none;
+    border-radius: 4rem;
+    margin: .4rem;
+}
+
+select, select:checked, select option:checked{
+    border: none;
+    background-color: transparent;
+    color: #434343;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    outline: transparent;
+}
+
+.bibliographicReference, .video-label{
+    padding: .4rem 0;
+    font-size: 1.2rem;
+    color: var(--label-text-color);
+}
+
+.stepByStepVideo{
+    padding: 2.4rem 0;
+}
+
+.video-container{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: .8rem;
+    overflow: hidden;
+}
+
+.video-container iframe, .player{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+
+.video-container .player{
+    cursor: pointer;
+}
+
+.video-container img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.video-container img:hover{
+    filter: grayscale(0%);
+}
+
+.video-label{
+    text-align: center;
+}
+
+.containerAnswer{
+    background-color: var(--light-main-color);
+    padding: 0 2rem;
+    border-left: .4rem solid var(--main-color);
+    margin-top: 1.6rem;
+}

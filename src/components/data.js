@@ -1,10 +1,9 @@
 const brandName = `Matemachica`;
 const copyright = `Todos os direitos reservados.`;
 
-addFavicon('/public/cute-hamster.png');
-addThemeColor('#d64d76');
-
 // favicon -------------------------------------------------------------------->
+addFavicon('/public/cute-hamster.png');
+
 function addFavicon(url) {
     var link = document.createElement('link');
     link.type = 'image/x-icon';
@@ -14,6 +13,8 @@ function addFavicon(url) {
 }
 
 // theme color -------------------------------------------------------------------->
+addThemeColor('#d64d76');
+
 function addThemeColor(color) {
     var metaTag = document.createElement('meta');
     metaTag.name = 'theme-color';
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     addCSSLink('/src/style/index.css');
 });
 
-// math expressions -------------------------------------------------------------------->
+// math language -------------------------------------------------------------------->
 function loadMathJax() {
     var mathJaxScript = document.createElement('script');
     mathJaxScript.id = 'MathJax-script';

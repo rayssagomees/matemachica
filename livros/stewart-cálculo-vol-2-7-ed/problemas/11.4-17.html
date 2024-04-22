@@ -6,41 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>Matemachica</title>
-
+  
+  <link rel="stylesheet" href="../../../src/style/problems/index.css">
+    
   <!-- scripts -->
-  <script src="../../../../../../../../../../../src/components/data.js"></script>
+  <script src="../../../src/components/data.js"></script>
 </head>
 <body>
-    <main class="flex-center-center">
+  <main class="flex-center-column-center">
         <div class="content">
-            <h2>Enunciado</h2>
+            <section class="question">
+                <h2>Problema</h2>
+                <p class="bibliographicReference">
+                    STEWART, James. Cálculo. Vol. 2. 7. ed. São Paulo: Cengage Learning, 2013. Capítulo 11.4. Exercício 17.
+                </p>
+                <p class="statement">
+                    Determine se a série \( \sum_{n=1}^{\infty}  \frac{1}{\sqrt{n^2+1}} \) converge ou diverge.
+                </p>
+            </section>
 
-            <div class="book-ref">
-                STEWART, James. Cálculo. Vol. 2. 7. ed. São Paulo: Cengage Learning, 2013. Capítulo 11.4. Exercício 17.
-            </div>
-
-            <p class="question">
-                Determine se a série \( \sum_{n=1}^{\infty}  \frac{1}{\sqrt{n^2+1}} \) converge ou diverge.
-            </p>
-
-            <div class="development">
+            <section class="stepByStep">
                 <h2>Passo a passo</h2>
 
-                <div class="video-tutorial">
+                <div class="stepByStepVideo">
                     <div class="flex-center-center">
-                        <div class="video-response" id="math-tuto" data-id="P2uzjag2iEs">
+                        <div class="video-container" id="math-tuto" data-id="P2uzjag2iEs">
                             <div class="player">
-                                <img width="560" height="315" src="../../../../../../../../../../../src/media/thumbnail/2.jpg" alt="YouTube video cover">
-        
-                                <i class="fi fi-rr-play flex-center-center"></i>
+                                <img width="560" height="315" src="../../../src/media/thumbnail/2.jpg" alt="Thumbnail">
                             </div>
                         </div>
                     </div>
                     <p class="video-label">
-                        Clique para assistir a resolução em vídeo.
+                        Clique para assistir a resolução comentada.
                     </p>
                 </div>
-
                 <p>
                     Vamos usar o teste da comparação no limite para ver se a série diverge ou não. O teste nos diz que \( \sum a_n \) e \( \sum b_n \) sejam séries com termos positivos. Se \( \lim_{n \to \infty} \frac{a_n}{b_n} = c, c > 0 \), então ambas as séries convergem ou divergem.
                 </p>
@@ -63,21 +62,21 @@
                 <p>
                     Como \( 1 > 0 \) e \( \sum b_n = \sum_{n=1}^{\infty} \frac{1}{n} \) é uma série harmônica e divergente, então, pelo teste da comparação no limite, a série \( \sum_{n=1}^{\infty} \frac{1}{\sqrt{n^2+1}} \) também vai divergir.
                 </p>
-            </div>
 
-            <h2>Resposta</h2>
+            </section>
 
-            <div class="padding-extra">
-                <div class="answer">
-                    <p>
+            <section class="answer">
+                <h2>Resposta</h2>
+                <div class="containerAnswer">
+                    <p class="questionAnswer">
                         \(\therefore \ \) A série \( \sum_{n=1}^{\infty} \frac{1}{\sqrt{n^2+1}} \) diverge.
                     </p>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
-
+    
     <!-- scripts -->
-    <script src="../../../../../../../../../../../src/components/video/autoplay.js"></script>
+    <script src="../../../src/components/video/autoplay.js"></script>
 </body>
 </html>

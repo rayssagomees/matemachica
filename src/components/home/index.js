@@ -10,7 +10,7 @@ const books = [
     placePublication: "São Paulo",
     editor: "Cengage Learning",
     yearPublication: "2013",
-    link: '/',
+    link: '/livros/stewart-cálculo-vol-2-7-ed/index.html',
   },
   {
     cover: bookCover + "guidorizzi-calculo-v3-5ed-2013.jpg",
@@ -21,7 +21,7 @@ const books = [
     placePublication: "São Paulo",
     editor: "LTC",
     yearPublication: "2013",
-    link: '/',
+    link: '/livros/guidorizzi-um-curso-de-cálculo-vol-3-5-ed/index.html',
   },
   ];
   
@@ -43,12 +43,8 @@ const books = [
       img.src = book.cover;
       img.alt = 'Capa do livro ' + book.title;
   
-      const title = document.createElement("h4");
-      title.textContent = book.title;
-  
       link.appendChild(img);
       bookDiv.appendChild(link);
-      bookDiv.appendChild(title);
   
       container.appendChild(bookDiv);
     }

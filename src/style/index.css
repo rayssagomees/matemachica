@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 :root{
     --main-color: #d64d76;
     --light-main-color: #fff8fa;
@@ -24,7 +20,9 @@ html{
     --font-title: 'Montserrat', sans-serif;
     --font-text: 'Montserrat', sans-serif;
 }
+
 html{
+    scroll-behavior: smooth;
     font-size: 62.5%;
 }
 
@@ -35,27 +33,20 @@ body{
     font-size: 1.8rem;
 }
 
+section{
+    padding: 1.2rem 0;
+}
+
 main{
-    padding: 1.8rem;
+    margin: 2rem;
 }
 
-footer{
-    text-align: center;
-    padding: 2rem;
-}
-
-h1, h2, h2, h4, h5, h6{
-    color: var(--main-color);
-    font-family: var(--font-text);
-    padding: .4rem 0;
+main div{
+    margin: .4rem 0;
 }
 
 h2{
-    font-size: 2.4rem;
-}
-
-h3{
-    padding-top: 1.4rem;
+    color: var(--main-color);
 }
 
 h4{
@@ -69,82 +60,17 @@ h4{
 }
 
 p{
-    padding: .8rem 0;
+    padding: 1.6rem 0;
 }
 
-.book-ref, .video-label{
-    font-size: 1.4rem;
-    color: var(--label-text-color);
-}
-.content{
-    width: 60%;
-    background-color: var(--box-background-color);
-    padding: 4rem 8rem;
-    border-radius: .8rem;
-}
-
-.question{
-    padding: 4rem 0;
-}
-
-.development{
-    padding: 1.4rem 0;
-}
-
-.video-label{
+footer{
     text-align: center;
-}
-
-.video-tutorial{
-    padding: 2.4rem 0;
-}
-
-.video-response{
-    width: 75%;
-    aspect-ratio: 16/9;
-    background-color: black;
-    border-radius: .8rem;
-    overflow: hidden;
-}
-
-.video-response iframe, .player{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: inherit;
-}
-
-.video-response .player{
-    cursor: pointer;
-}
-
-.video-response img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.padding-extra{
-    padding: 2rem 0;
-}
-
-.answer{
-    width: 100%;
-    background-color: var(--light-main-color);
-    border-left: .4rem solid var(--main-color); 
-    padding: 1.8rem 4rem;
+    padding: 2rem;
 }
 
 @media only screen and (max-width: 670px) {
     body{
         font-size: 1.2rem;
-    }
-
-    h2{
-        font-size: 1.6rem;
     }
 
     .content {
@@ -161,7 +87,19 @@ p{
     }
 }
 
-@media only screen and (min-width: 670px) and (max-width: 900px) {
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
+    .content {
+        width: 80%;
+        padding: 4rem 8rem;
+        font-size: 1.4rem;
+    }
+
+    .video-response{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
     .content {
         width: 80%;
         padding: 4rem 8rem;
@@ -176,5 +114,19 @@ p{
 .flex-center-center{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.flex-center-column-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-center-row-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
 }
